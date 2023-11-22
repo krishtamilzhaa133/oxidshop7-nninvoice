@@ -1,9 +1,0 @@
-{% extends "page/checkout/payment.html.twig" %}
-
-{% block select_payment %}
-    {% if sPaymentID == 'novalnetinvoice' %}
-        {% include "@nninvoice/frontend/novalnet_invoice.html.twig" %}
-    {% else %}
-        {{ parent() }}
-    {% endif %}
-{% endblock %}
