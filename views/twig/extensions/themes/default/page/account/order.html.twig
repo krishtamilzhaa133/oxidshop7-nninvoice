@@ -1,9 +1,0 @@
-{% extends 'page/account/order.html.twig' %}
-{% block account_order_history_cart_items %}
-{{ parent() }}
-<ol class="list-unstyled">
-    <li>checking</li>
-    {% set sNovalnetComments = oView.NovalnetInvoiceComment() %}
-    <li>{{ sNovalnetComments }}</li>
-</ol>
-{% endblock %}
