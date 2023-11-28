@@ -1,0 +1,34 @@
+{
+    "name":        "nninvoice/novalnet-nninvoice-module",
+    "description": "This Module for Novalnet Invoice Payment Process",
+    "type":        "oxideshop-module",
+    "keywords":    [
+        "oxid",
+        "modules",
+        "eShop",
+        "payment",
+        "invoice",
+        "novalnet"
+    ],
+    "homepage":    "https://www.novalnet.com",
+    "license":     [
+        "GPL-3.0",
+        "proprietary"
+    ],
+    "authors":     [
+        {
+            "name":  "Novalnet Developer",
+            "email": "technical@novalnet.de"
+        }
+    ],
+    "extra":       {
+        "oxideshop": {
+            "target-directory": "nninvoice/nninvoice"
+        }
+    },
+    "autoload":    {
+        "psr-4": {
+            "Nninvoice\\": "./"
+       }
+    }
+}
